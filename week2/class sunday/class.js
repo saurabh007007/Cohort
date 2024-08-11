@@ -49,3 +49,4 @@ class Rectangle {
     console.log("Hi saurabh")
  }
  setTimeout(logName,3000)
+ 

@@ -10,5 +10,15 @@ function setTimeoutPromisified(ms) {
       console.log("3 seconds have passed");
   }
   
-  setTimeoutPromisified(3000).then(callback)
-  
+//   setTimeoutPromisified(3000).then(callback)
+
+let k= setTimeoutPromisified(3000)
+console.log(k)
+
+function wait3s(resolve){
+    setTimeout(resolve,3000)
+}
+function main(){
+    console.log("hi saurabh")
+}
+wait3s(main)
