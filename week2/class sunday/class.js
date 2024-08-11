@@ -43,3 +43,9 @@ class Rectangle {
  map.set('name', 'Alice');
  map.set('age', 30);
  console.log(map);
+
+
+ function logName(){
+    console.log("Hi saurabh")
+ }
+ setTimeout(logName,3000)
