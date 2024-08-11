@@ -22,3 +22,11 @@ function main(){
     console.log("hi saurabh")
 }
 wait3s(main)
+
+
+//create a promise class something like below 
+class Promise{
+    constructor(fn){
+
+    }
+}
