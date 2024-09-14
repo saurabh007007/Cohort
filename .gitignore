@@ -1,2 +1,7 @@
-./node_modules
-./week 4/nodejsProject/node_modules
+/node_modules
+/week 4/nodejsProject/node_modules
+/week 4/Http-Server-Express/node_modules
+/week 6/autentication/node_modules
+/Assignment/week-5/backend/node_modules
+/week 6/autentication2/node_modules
+/week-7/todo/backend/node_modules
