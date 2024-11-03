@@ -18,7 +18,7 @@ const Dashboard = () => {
             Monday, 14th October
           </h3>
           <h1 className="text-xl md:text-3xl mt-5 md:mb-5 lg:mb-10 text-[#0D2149] font-bold">
-            Good Morning, Prabhleen! 👋
+            Good Morning, Saurabh Yadav! 👋
           </h1>
           <div className="flex flex-col lg:flex-row gap-6">
             <WebinarList />
