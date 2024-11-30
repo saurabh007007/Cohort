@@ -2,14 +2,12 @@ const express = require("express");
 const { auth, JWT_SECRET } = require("./auth");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
 const app = express();
 app.use(express.json());
-
-mongoose
-  .connect(
-    "mongodb+srv://2204280100153:2204280100153@saurabhlearn.azcyh.mongodb.net/todo-saurabh"
-  )
-  .then(() => console.log("Connected db"));
+mongoose.connect(
+  "mongodb+srv://2204280100153:2204280100153@saurabhlearn.azcyh.mongodb.net/todo-saurabh"
+);
 
 const { UserModel, TodoModel } = require("./db");
 
@@ -17,10 +15,12 @@ app.post("/signup", async (req, res) => {
   const name = req.body.name;
   const password = req.body.password;
   const email = req.body.email;
+  const hasedPassword = await bcrypt.hash(password, 5);
+  console.log(hasedPassword);
 
   await UserModel.create({
     email: email,
-    password: password,
+    password: hasedPassword,
     name: name,
   });
 
