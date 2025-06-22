@@ -32,3 +32,11 @@ EXPOSE 3000
 CMD ["node","index.js"]
 
 # //now build thei image 
+
+# passing the environment variabke to the docker images -r 
+
+
+
+
+
+
