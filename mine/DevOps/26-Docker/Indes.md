@@ -40,4 +40,31 @@ docker ps -->> will show the container that is running
 2. docker kill <Conatiner id> --->>> it will kill the process
 3. docker images -->>> shows alll the docker images that are presnt in my machine 
 4. docker run -p <machine port>:<container default poort> <image name> -- >> it will heklp you to port map the container with the machine 
-5. docker build -->> we will seee it more details 
+5. docker build -->> we will seee it more details (help to create your own images that is where it comes into the picture )
+6. docker push -->> pushed the image to hub do
+7. docker exec -it(menas intractive mode) <containerid> /bin/bash -->> let's u execute commands in docker containers
+8.7. docker exec -it(menas intractive mode) <containerid> sh
+
+# Step 8 - Common docker commands
+docker images
+docker ps
+docker run
+docker build
+1. docker images
+Shows you all the images that you have on your machine
+2. docker ps
+Shows you all the containers you are running on your machine
+3. docker run
+Lets you start a container
+-p ⇒ let’s you create a port mapping
+-d. ⇒ Let’s you run it in detatched mode
+4. docker build
+Lets you build an image. We will see this after we understand how to create your own Dockerfile
+5. docker push
+Lets you push your image to a registry
+6. Extra commands
+docker kill
+docker exec
+
+
+Docker file -->> help us to create the docker images
