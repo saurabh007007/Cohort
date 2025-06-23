@@ -14,14 +14,19 @@ WORKDIR /app
 
 # ADD DOCKERIGNORE  
 
-COPY . .  
+# COPY . .  
 
 # COPY ALL THE FILES FROM HERE TO WORK DIR /app/ 
 
 
 # run commands runs the run commands 
+#  this is the expensive opertaion let's optimized the dockr file now
+COPY package.json ./package.json
 
+COPY package-lock.json ./package-lock.json
 RUN npm install 
+
+COPY . .  
 
 # // IT TELLS WICH PORT IS EXPOSE 
 EXPOSE 3000
